@@ -1,0 +1,35 @@
+/* Search dropdown */ 
+div[class^="layerContainer"] > div[id*="popout"] > div[class*="container"][class*="elevationBorderHigh"]  {
+    background-color: var(--background-secondary);
+
+    div[class^="queryContainer"][class*="focused"] {
+        background-color: var(--background-primary);
+        div[class^="queryText"] {
+            color: var(--text-muted);
+
+            strong {
+                color: var(--text-normal);
+            }
+        }
+    }
+
+    ul[class^="resultsGroup"] {
+        background-color: var(--background-secondary);
+        div[class*="header"] {
+            color: var(--text-normal)
+        }
+
+        div[class^="option"][class*="searchOption"] {
+            &::after {
+                background: transparent;
+            }
+
+            span[class^="filter"] {
+                color: var(--text-normal)
+            }
+            span[class^="answer"] {
+                color: var(--text-muted)
+            }
+        }
+    }
+}

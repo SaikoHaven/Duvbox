@@ -1,0 +1,47 @@
+/* Main chat textbox */
+div[class^="channelTextArea"] > div[class*="scrollableContainer"] {
+    background-color: var(--background-secondary);
+}
+
+/* Fix channel name colours */ 
+div[class^="name"] > div[class^="channelName"] {
+    color: var(--text-muted);
+}
+
+// and for unread msgs
+a[aria-label*="unread"] > div[class^="name"] > div[class^="channelName"] {
+    color: var(--text-normal);
+}
+
+
+/* Fix channel name highlights */
+div[class*="content"] > div[class*="containerDefault"] > div[class*="iconVisibility"] > div[class*="content"]:hover {
+    background-color: var(--background-accent);
+}
+
+div[class*="content"] > div[class*="containerDefault"][class*="selected"] > div[class*="iconVisibility"] > div[class*="content"]:hover {
+    background-color: var(--background-accent);
+}
+div[class*="content"] > div[class*="containerDefault"][class*="selected"] > div[class*="iconVisibility"] > div[class*="content"] {
+    background-color: var(--background-tertiary);
+}
+
+
+// for voice channels, cause they have an extra <div> in because fuck you
+div[class*="content"] > div[class*="containerDefault"][class*="selected"] > div > div[class*="iconVisibility"] > div[class*="content"]:hover {
+    background-color: var(--background-accent);
+}
+
+div[class*="content"] > div[class*="containerDefault"] > div > div[class*="iconVisibility"] > div[class*="content"]:hover {
+    background-color: var(--background-accent);
+}
+
+/* Change the colour of the title of each category */ 
+div[class^="mainContent"][aria-label*="(category)"] > h2[class^="name"] > div[class*="overflow"] {
+    color: var(--text-muted);
+}
+
+/* Spoiler text */
+div[class*="markup"] > span[class*="spoilerText"][class*="hidden"]{
+    background-color: var(--background-secondary);
+}

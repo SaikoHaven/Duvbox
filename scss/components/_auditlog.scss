@@ -1,0 +1,16 @@
+/* Set correct text colour and bg */
+div[class^="content"] > div[role="list"] > div[class*="flex"] > div[class^="headerClickable"] > div[class^="flex"] > * > span {
+    color: var(--text-normal);
+}
+
+div[class^="content"] > div[role="list"] > div[class*="flex"] > div[class^="headerClickable"] > div[class^="flex"] {
+    color: var(--text-muted);
+}
+
+div[class^="content"] > div[role="list"] > div[class*="flex"] > div[class^="headerClickable"] > div[class^="flex"] > * > span > *{
+    color: var(--text-normal);
+}
+
+div[class^="content"] > div[role="list"] > div[class*="flex"] > div[class^="headerClickable"] > div[class^="flex"] > div[class^="timestamp"] {
+    color: var(--text-muted)
+}

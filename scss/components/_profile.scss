@@ -1,0 +1,4 @@
+/* Bottom left section of profile, containing settings icon + name/discrim + VC buttons */
+section[class^="panels"] > div[class^="container"] {
+    background-color: var(--background-secondary);
+}

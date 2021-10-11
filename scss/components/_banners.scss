@@ -1,0 +1,10 @@
+div[class^="base"] > div[class^="notice"][class*="colorWarning"] {
+    background-color: var(--header-warning);
+    color: var(--background-primary);
+}
+
+div[class^="base"] > div[class^="notice"][class*="colorNotification"] {
+    background-color: var(--header-notif);
+    color: var(--background-primary);
+}
+

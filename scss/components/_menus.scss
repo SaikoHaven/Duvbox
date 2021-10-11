@@ -1,0 +1,18 @@
+/* Set hovering menu items in server/user settings to colour properly */@at-root
+nav[class^="sidebar"] > div[class*="side"] > div[class*="item"][class*="selected"] {
+    background-color: var(--background-tertiary);
+}
+
+nav[class^="sidebar"] > div[class*="side"] > div[class*="item"][class*="themed"]:hover {
+    background-color: var(--background-accent);
+}
+
+nav[class^="sidebar"] > div[class*="side"] > div[class*="item"][class*="selected"]:hover {
+    background-color: var(--background-accent);
+}
+
+/* Set server/user menu header to the right colour */ 
+nav[class^="sidebar"] > div[class*="side"] > div[class^="header"] {
+    color: var(--text-normal);
+}
+

@@ -1,0 +1,16 @@
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    width:5px !important;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--background-primary) !important;
+    width:5px !important;
+    border:none !important;
+    border-radius: 0px !important;
+}

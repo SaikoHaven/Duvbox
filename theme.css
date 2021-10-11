@@ -1,0 +1,274 @@
+.theme-dark {
+  --background-primary: #282828;
+  --background-secondary: #3c3836;
+  --background-tertiary: #504945;
+  --background-accent: #32302f;
+  --text-normal: #ebdbb2;
+  --text-spotify: #fbf1c7;
+  --text-muted: #bdae93;
+  --text-link: #458588;
+  --background-floating: #3c3836;
+  --header-primary: #ebdbb2;
+  --header-secondary: #bdae93;
+  --header-notif: #b8bb26;
+  --header-warning: #fabd2f;
+  --interactive-normal: #ebdbb2;
+  --interactive-hover: #bdae93;
+  --interactive-active: #fbf1c7;
+}
+
+.theme-light {
+  --background-primary: #fbf1c7;
+  --background-secondary: #ebdbb2;
+  --background-tertiary: #d5c4a1;
+  --background-accent: #f2e5bc;
+  --text-normal: #3c3836;
+  --text-muted: #504945;
+  --text-link: #076678;
+  --header-primary: #3c3836;
+  --header-secondary: #504945;
+  --header-notif: #98971a;
+  --header-warning: #d79921;
+  --background-floating: #ebdbb2;
+  --interactive-normal: #665c54;
+  --interactive-muted: #928374;
+  --interactive-hover: #504945;
+  --interactive-active: #7c6f64;
+}
+
+div[class^=peopleColumn] {
+  background-color: var(--background-primary);
+}
+
+div[class^=base] > div[class^=notice][class*=colorWarning] {
+  background-color: var(--header-warning);
+  color: var(--background-primary);
+}
+
+div[class^=base] > div[class^=notice][class*=colorNotification] {
+  background-color: var(--header-notif);
+  color: var(--background-primary);
+}
+
+/* Powercord Spotify */
+div[class=powercord-spotify] {
+  background-color: var(--background-secondary);
+}
+
+div[class="powercord-spotify hover"] {
+  background-color: var(--background-tertiary);
+}
+
+/* Bottom left section of profile, containing settings icon + name/discrim + VC buttons */
+section[class^=panels] > div[class^=container] {
+  background-color: var(--background-secondary);
+}
+
+/* Main chat textbox */
+div[class^=channelTextArea] > div[class*=scrollableContainer] {
+  background-color: var(--background-secondary);
+}
+
+/* Fix channel name colours */
+div[class^=name] > div[class^=channelName] {
+  color: var(--text-muted);
+}
+
+a[aria-label*=unread] > div[class^=name] > div[class^=channelName] {
+  color: var(--text-normal);
+}
+
+/* Fix channel name highlights */
+div[class*=content] > div[class*=containerDefault] > div[class*=iconVisibility] > div[class*=content]:hover {
+  background-color: var(--background-accent);
+}
+
+div[class*=content] > div[class*=containerDefault][class*=selected] > div[class*=iconVisibility] > div[class*=content]:hover {
+  background-color: var(--background-accent);
+}
+
+div[class*=content] > div[class*=containerDefault][class*=selected] > div[class*=iconVisibility] > div[class*=content] {
+  background-color: var(--background-tertiary);
+}
+
+div[class*=content] > div[class*=containerDefault][class*=selected] > div > div[class*=iconVisibility] > div[class*=content]:hover {
+  background-color: var(--background-accent);
+}
+
+div[class*=content] > div[class*=containerDefault] > div > div[class*=iconVisibility] > div[class*=content]:hover {
+  background-color: var(--background-accent);
+}
+
+/* Change the colour of the title of each category */
+div[class^=mainContent][aria-label*="(category)"] > h2[class^=name] > div[class*=overflow] {
+  color: var(--text-muted);
+}
+
+/* Spoiler text */
+div[class*=markup] > span[class*=spoilerText][class*=hidden] {
+  background-color: var(--background-secondary);
+}
+
+/* Green buttons, like the Discord "join server" button on invites */
+.theme-dark button[class*=button][class*=colorGreen] {
+  background-color: #98971a;
+}
+
+.theme-dark button[class*=button][class*=colorGreen]:hover {
+  background-color: #b8bb26;
+}
+
+.theme-light button[class*=button][class*=colorGreen] {
+  background-color: #79740e;
+}
+
+.theme-light button[class*=button][class*=colorGreen]:hover {
+  background-color: #98971a;
+}
+
+/* Grey buttons, like the "edit" buttons on your profile settings */
+.theme-dark button[class*=button][class*=lookFilled][class*=colorGrey] {
+  background-color: #7c6f64;
+}
+
+.theme-dark button[class*=button][class*=lookFilled][class*=colorGrey]:hover {
+  background-color: #928374;
+}
+
+.theme-light button[class*=button][class*=lookFilled][class*=colorGrey] {
+  background-color: #928374;
+}
+
+.theme-light button[class*=button][class*=lookFilled][class*=colorGrey]:hover {
+  background-color: #a89984;
+}
+
+/* Branded [blurple] coloured buttons, like the "Change Password" button on your settings */
+.theme-dark button[class*=button][class*=lookFilled][class*=colorBrand] {
+  background-color: #458588;
+}
+
+.theme-dark button[class*=button][class*=lookFilled][class*=colorBrand]:hover {
+  background-color: #83a598;
+}
+
+.theme-light button[class*=button][class*=lookFilled][class*=colorBrand] {
+  background-color: #076678;
+}
+
+.theme-light button[class*=button][class*=lookFilled][class*=colorBrand]:hover {
+  background-color: #458588;
+}
+
+/* Transparent buttons, like the phone verification button on banners */
+div[class^=base] > div[class^=notice] > button {
+  border-color: var(--background-primary);
+  color: var(--background-primary);
+}
+
+/* Change the colour of the bars on the scaling menus */
+div[class^=barFill] {
+  background-color: var(--text-link);
+}
+
+/* Change the colour of the highlighted value above the bars */
+div[class^=mark][class*=defaultValue] > div[class*=markValue] {
+  color: #b8bb26;
+}
+
+div[class^=mark] > div[class*=markValue] {
+  color: var(--text-muted);
+}
+
+/* New unreads bar */
+div[class^=bar][class*=unreadBar] {
+  background-color: var(--background-primary);
+}
+
+div[class^=bar][class*=unreadBar] > span {
+  color: var(--text-normal);
+}
+
+/* Set hovering menu items in server/user settings to colour properly */
+nav[class^=sidebar] > div[class*=side] > div[class*=item][class*=selected] {
+  background-color: var(--background-tertiary);
+}
+
+nav[class^=sidebar] > div[class*=side] > div[class*=item][class*=themed]:hover {
+  background-color: var(--background-accent);
+}
+
+nav[class^=sidebar] > div[class*=side] > div[class*=item][class*=selected]:hover {
+  background-color: var(--background-accent);
+}
+
+/* Set server/user menu header to the right colour */
+nav[class^=sidebar] > div[class*=side] > div[class^=header] {
+  color: var(--text-normal);
+}
+
+/* Set correct text colour and bg */
+div[class^=content] > div[role=list] > div[class*=flex] > div[class^=headerClickable] > div[class^=flex] > * > span {
+  color: var(--text-normal);
+}
+
+div[class^=content] > div[role=list] > div[class*=flex] > div[class^=headerClickable] > div[class^=flex] {
+  color: var(--text-muted);
+}
+
+div[class^=content] > div[role=list] > div[class*=flex] > div[class^=headerClickable] > div[class^=flex] > * > span > * {
+  color: var(--text-normal);
+}
+
+div[class^=content] > div[role=list] > div[class*=flex] > div[class^=headerClickable] > div[class^=flex] > div[class^=timestamp] {
+  color: var(--text-muted);
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background: transparent !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  width: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-primary) !important;
+  width: 5px !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+/* Search dropdown */
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] {
+  background-color: var(--background-secondary);
+}
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] div[class^=queryContainer][class*=focused] {
+  background-color: var(--background-primary);
+}
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] div[class^=queryContainer][class*=focused] div[class^=queryText] {
+  color: var(--text-muted);
+}
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] div[class^=queryContainer][class*=focused] div[class^=queryText] strong {
+  color: var(--text-normal);
+}
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] ul[class^=resultsGroup] {
+  background-color: var(--background-secondary);
+}
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] ul[class^=resultsGroup] div[class*=header] {
+  color: var(--text-normal);
+}
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] ul[class^=resultsGroup] div[class^=option][class*=searchOption]::after {
+  background: transparent;
+}
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] ul[class^=resultsGroup] div[class^=option][class*=searchOption] span[class^=filter] {
+  color: var(--text-normal);
+}
+div[class^=layerContainer] > div[id*=popout] > div[class*=container][class*=elevationBorderHigh] ul[class^=resultsGroup] div[class^=option][class*=searchOption] span[class^=answer] {
+  color: var(--text-muted);
+}
+
+/*# sourceMappingURL=theme.css.map */

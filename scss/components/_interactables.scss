@@ -1,0 +1,78 @@
+/* Green buttons, like the Discord "join server" button on invites */
+.theme-dark button[class*="button"][class*="colorGreen"] {
+    background-color: #98971a;
+}
+
+.theme-dark button[class*="button"][class*="colorGreen"]:hover {
+    background-color: #b8bb26;
+}
+
+.theme-light button[class*="button"][class*="colorGreen"] {
+    background-color: #79740e;
+}
+
+.theme-light button[class*="button"][class*="colorGreen"]:hover {
+    background-color: #98971a;
+}
+
+
+/* Grey buttons, like the "edit" buttons on your profile settings */
+.theme-dark button[class*="button"][class*="lookFilled"][class*="colorGrey"] {
+    background-color: #7c6f64;
+}
+.theme-dark button[class*="button"][class*="lookFilled"][class*="colorGrey"]:hover {
+    background-color: #928374;
+}
+
+.theme-light button[class*="button"][class*="lookFilled"][class*="colorGrey"] {
+    background-color: #928374;
+}
+.theme-light button[class*="button"][class*="lookFilled"][class*="colorGrey"]:hover {
+    background-color: #a89984;
+}
+
+/* Branded [blurple] coloured buttons, like the "Change Password" button on your settings */
+.theme-dark button[class*="button"][class*="lookFilled"][class*="colorBrand"] {
+    background-color: #458588;
+
+}
+.theme-dark button[class*="button"][class*="lookFilled"][class*="colorBrand"]:hover {
+    background-color: #83a598;
+}
+
+.theme-light button[class*="button"][class*="lookFilled"][class*="colorBrand"] {
+    background-color: #076678;
+
+}
+.theme-light button[class*="button"][class*="lookFilled"][class*="colorBrand"]:hover {
+    background-color: #458588;
+}
+
+/* Transparent buttons, like the phone verification button on banners */
+div[class^="base"] > div[class^="notice"] > button {
+    border-color: var(--background-primary);
+    color: var(--background-primary);
+}
+
+/* Change the colour of the bars on the scaling menus */
+div[class^="barFill"] {
+    background-color: var(--text-link);
+}
+
+/* Change the colour of the highlighted value above the bars */
+div[class^="mark"][class*="defaultValue"] > div[class*="markValue"] {
+    color: #b8bb26;
+}
+
+div[class^="mark"] > div[class*="markValue"] {
+    color: var(--text-muted);
+}
+
+/* New unreads bar */ 
+div[class^="bar"][class*="unreadBar"] {
+    background-color: var(--background-primary);
+}
+
+div[class^="bar"][class*="unreadBar"] > span {
+    color: var(--text-normal);
+}
